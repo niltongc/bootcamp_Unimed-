@@ -1,0 +1,134 @@
+:root {
+    --azul: #0095f6;
+    --branco: #ffffff;
+    --cinza-fonte: #a2a2a2;
+    --cinza-para-fundo: #f3f3f3;
+    --cinza-borda: #d3d3d3;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--azul);
+}
+
+.principal {
+    width: 100%;
+}
+.centralizar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login {
+    height: 17rem;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 10rem;
+}
+
+.foto-perfil {
+
+    border-radius: 50%;
+    height: 6rem;
+    padding: 0;
+    width: 6rem;
+}
+
+.login-continue {
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    color: var(--branco);
+    padding: 0.5rem 0.3rem;
+    border-radius: 5px;
+}
+
+.logout {
+    height: 8rem;
+    justify-content: center;
+}
+
+.logout p{
+    color: var(--cinza-fonte);
+}
+
+.logout-contas{
+    display: flex;
+}
+
+.logout-contas a{
+    margin: 0 0.4rem;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.app img{
+    width: 9rem;
+    padding: 1rem 0.4rem;
+}
+
+.smartphone{
+    display: none;
+}
+
+@media screen and (min-width: 650px) {
+    body {
+        width: 90%;
+        margin: auto;
+        flex-direction: row-reverse;
+        background-color: var(--cinza-para-fundo);
+      
+    }
+    .smartphone {
+        display: flex;
+        width: 50%;
+        overflow: hidden;
+        justify-content: center;
+    }
+    .smartphone img{
+        width: 45rem;
+    }
+
+    .principal {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        max-width: 25rem;
+    }
+    
+    .login {
+        background-color: var(--branco);
+        justify-content: space-around;
+        border: 1px solid var(--cinza-borda);
+    }
+    
+    .logout {
+        background-color: var(--branco);
+        margin-top: 5px;
+        border: 1px solid var(--cinza-borda);
+        height: 5rem;
+    }
+
+    .baixar-app p{
+        padding: 1.5rem 0 0 0;
+    }
+}
+
